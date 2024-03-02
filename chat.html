@@ -48,16 +48,18 @@
              feed.appendChild(new_chat);
 
              if (input.value.toLowerCase() == "hi" || input.value.toLowerCase() == "hello") {
-                let new_new_chat = document.createElement("p");
-                new_new_chat.textContent = "hey!!";
-                new_new_chat.classList.add("chat-msg");
-                new_new_chat.classList.add("chat-msg-from");
-                feed.appendChild(new_new_chat);
+                 let new_new_chat = document.createElement("p");
+                 new_new_chat.textContent = "hey!!";
+                 new_new_chat.classList.add("chat-msg");
+                 new_new_chat.classList.add("chat-msg-from");
+                 setTimeout(function() {
+                    feed.appendChild(new_new_chat);
+                 }, 1300);
              }
          }
 
          button.addEventListener("click", chat);
-         input.addEventListener('keyup', function() {
+         input.addEventListener("keyup", function() {
              if (event.keyCode === 13) {
                  chat();
                  input.value = "";

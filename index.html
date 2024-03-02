@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body id="landing">
+    <body>
         <header id="alt-bg">
             <ul>
                 <li><a href="plates.html">plates</a></li>
@@ -16,5 +16,60 @@
                 <li><a href="login.html">login</a></li>
             </ul>
         </header>
+        <div id="landing">
+            <button id="add-friend"><img src="assets/add.png"></button>
+        </div>
+        <script>
+         function bodyClick(e) {
+             let x = e.clientX;
+             let y = e.clientY;
+
+             // alert(x + ", " + y);
+             // 1512 x 865
+             // alert(LANDING_WIDTH + " - " + LANDING_HEIGHT);
+
+             if (x >= BUILDING1_XMIN && x <= BUILDING1_XMAX) {
+                 if (y <= BUILDING1_YMIN) {
+                    alert("Entering Building 1");
+                 }
+             }
+             if (x >= BUILDING2_XMIN && x <= BUILDING2_XMAX) {
+                 if (y <= BUILDING2_YMIN && y >= BUILDING2_YMAX) {
+                    alert("Entering Building 2");
+                 }
+             }
+             if (x >= BUILDING3_XMIN && x <= BUILDING3_XMAX) {
+                 if (y <= BUILDING3_YMIN && y >= BUILDING3_YMAX) {
+                    alert("Entering Building 3");
+                 }
+             }
+         }
+
+         let add = document.getElementById("add-friend");
+         let landing = document.getElementById("landing");
+
+         LANDING_WIDTH = landing.offsetWidth;
+         LANDING_HEIGHT = landing.offsetHeight;
+
+         BUILDING1_XMIN = LANDING_WIDTH * 0.0866;
+         BUILDING1_XMAX = LANDING_WIDTH * 0.2248;
+         BUILDING1_YMIN = LANDING_HEIGHT * 0.837;
+         BUILDING1_YMAX = LANDING_HEIGHT * 0.15607;
+
+         BUILDING2_XMIN = LANDING_WIDTH * 0.25595;
+         BUILDING2_XMAX = LANDING_WIDTH * 0.49603;
+         BUILDING2_YMIN = LANDING_HEIGHT * 0.837; // same ground level
+         BUILDING2_YMAX = LANDING_HEIGHT * 0.45434;
+
+         BUILDING3_XMIN = LANDING_WIDTH * 0.28108;
+         BUILDING3_XMAX = LANDING_WIDTH * 0.46561;
+         BUILDING3_YMIN = LANDING_HEIGHT * 0.44624;
+         BUILDING3_YMAX = LANDING_HEIGHT * 0.15376; // sky high
+
+         add.addEventListener("click", function() {
+             window.location.href = "addfriend.html";
+         });
+         landing.addEventListener("click", bodyClick);
+        </script>
     </body>
 </html>

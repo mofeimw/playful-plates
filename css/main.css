@@ -24,6 +24,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
+    height: 100vh;
 }
 
 a {
@@ -36,11 +37,32 @@ a:hover {
     cursor: pointer;
 }
 
+#add-friend {
+    background: 0;
+    outline: 0;
+    border: 0;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1rem;
+}
+
+#add-friend:hover {
+    cursor: pointer;
+}
+
+#add-friend img {
+    width: 7rem;
+    height: 7rem;
+}
+
 header {
     height: 10vh;
     background-color: #5E8C61;
     text-align: center;
     padding-top: 5vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header li {
@@ -62,6 +84,10 @@ header #centerpiece #greenery {
     color: #5E8C61;
 }
 
+header #centerpiece #greenery:hover {
+    color: #eba2af;
+}
+
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -74,6 +100,7 @@ h1 {
 /* CHAT */
 #chat {
     margin: 2.5rem;
+    margin-top: 19vh;
     background-color: #F5F5DC;
     border-radius: 25px 25px 25px 25px;
 }
@@ -82,7 +109,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    padding: 0;
+    padding: 0.1rem 0;
     background-color: #273027;
     border-radius: 25px 25px 0 0;
 }
@@ -173,6 +200,7 @@ h1 {
 #plates {
     display: flex;
     margin: 2.5rem;
+    margin-top: 21vh;
     color: #2A1A1F;
 }
 
@@ -235,6 +263,7 @@ h2 {
     align-items: center;
     justify-content: center;
     height: 70vh;
+    margin-top: 13vh;
 }
 
 #login-container {
@@ -279,7 +308,7 @@ h2 {
 
 #login #login-buttons .button:hover {
     background-color: #2A1A1F;
-    color: pink;
+    color: #eba2af;
     cursor: pointer;
 }
 
@@ -289,4 +318,59 @@ h2 {
 
 #login-buttons #login-signup {
     background-color: #A9DEF9;
+}
+
+/* ADD FRIEND */
+#addfriend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin-top: 15vh;
+}
+
+#addfriend-container {
+    width: 40%;
+    height: 30%;
+    background-color: #F5F5DC;
+    border-radius: 25px;
+    padding: 3rem;
+}
+
+#addfriend-email {
+    display: block;
+    width: 97%;
+    color: #2A1A1F;
+    background-color: #b2dbce;
+    border-radius: 10px;
+    height: 3rem;
+    margin-bottom: 1.75rem;
+    border: 0;
+    padding-left: 1rem;
+}
+
+#addfriend-email:focus {
+    outline: none;
+    outline-width: 0;
+}
+
+#addfriend h2 {
+    color: #2A1A1F;
+    margin-bottom: 1rem;
+}
+
+#addfriend-button {
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#addfriend-submit:hover {
+    background-color: #2A1A1F;
+    color: #eba2af;
+    cursor: pointer;
+}
+
+#addfriend-submit {
+    background-color: #71BDA3;
 }
