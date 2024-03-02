@@ -374,3 +374,121 @@ h2 {
 #addfriend-submit {
     background-color: #71BDA3;
 }
+
+/* WORLDS */
+#worlds {
+    margin: 0 auto;
+    margin-top: 35vh;
+}
+.worlds-arrow {
+    background: 0;
+    outline: 0;
+    border: 0;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1rem;
+}
+
+.worlds-arrow:hover {
+    cursor: pointer;
+}
+
+.worlds-arrow img {
+    width: 7rem;
+    height: auto;
+    position: fixed;
+    top: 50%;
+}
+
+#worlds-arrow-left img {
+    left: 1rem;
+}
+
+#worlds-arrow-right img {
+    right: 1rem;
+}
+
+#worlds-container {
+    display: flex;
+    padding: 0 4rem;
+}
+
+.world-world {
+    display: inline-block;
+    width: calc(100% / 3);
+    color: #2A1A1F;
+}
+
+.world-world:first-child {
+    margin-left: 13%;
+}
+
+.world-map {
+    display: inline-block;
+    width: 60%;
+}
+
+.world-world p {
+    text-align: center;
+    margin-right: 35%;
+    margin-top: 5%;
+    font-size: 1.4rem;
+}
+
+/* MARKET */
+#market {
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+.market-arrow {
+    background: 0;
+    outline: 0;
+    border: 0;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1rem;
+}
+
+.market-arrow:hover {
+    cursor: pointer;
+}
+
+.market-arrow img {
+    width: 7rem;
+    height: auto;
+    position: fixed;
+    top: 50%;
+}
+
+#market-arrow-left img {
+    left: 1rem;
+}
+
+#market-arrow-right img {
+    right: 1rem;
+}
+
+#market-container-top {
+    display: flex;
+    padding: 0 8rem;
+}
+
+#market-container-bottom {
+    display: flex;
+    padding: 0 8rem;
+}
+
+.market-item {
+    display: inline-block;
+    width: calc(100% / 4);
+    color: #2A1A1F;
+}
+
+.market-item:first-child {
+    margin-left: 10%;
+}
+
+#bike, #flowerpot {
+    margin-top: 30%;
+    margin-left: 10%;
+}
