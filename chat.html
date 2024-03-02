@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Playful Plates</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header id="alt-bg">
+            <ul>
+                <li><a href="plates.html">plates</a></li>
+                <li><a href="chat.html">chat</a></li>
+                <li id="centerpiece"><a href="index.html" id="greenery">Playful Plates</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </header>
+
+        <div id="chat">
+            <ul id="chat-bar">
+                <li><a href="#"><img src="assets/gerbil-avatar1.png"></li>
+                <li><a href="#"><img src="assets/gerbil-avatar2.png"></li>
+                <li><a href="#"><img src="assets/gerbil-avatar3.png"></li>
+                <li><a href="#"><img src="assets/gerbil-avatar4.png"></li>
+                <li><a href="#"><img src="assets/gerbil-avatar5.png"></li>
+            </ul>
+            <div id="chat-feed">
+                <p class="chat-msg chat-msg-from">hello! (the chat works)</p>
+                <p class="chat-msg chat-msg-to">hello to you back!</p>
+            </div>
+            <div id="chat-chat">
+                <input type="text" id="chat-input" class="chat-chat-form-style">
+                <button id="chat-send" class="chat-chat-form-style">Send</button>
+            </div>
+        </div>
+
+        <script>
+         let button = document.getElementById("chat-send");
+         let input = document.getElementById("chat-input");
+         let feed = document.getElementById("chat-feed");
+
+         function chat() {
+             let new_chat = document.createElement("p");
+             new_chat.textContent = input.value;
+             new_chat.classList.add("chat-msg");
+             new_chat.classList.add("chat-msg-to");
+             feed.appendChild(new_chat);
+         }
+
+         button.addEventListener("click", chat);
+         input.addEventListener('keyup', function() {
+             if (event.keyCode === 13) {
+                 chat();
+             }
+         });
+        </script>
+    </body>
+</html>

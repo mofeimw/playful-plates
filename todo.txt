@@ -1,0 +1,5 @@
+add friends button - landing page bottom right - alert after maybe
+login - also provide feedback
+about page
+chat function
+signup - clarify user/donator
