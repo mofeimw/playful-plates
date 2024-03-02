@@ -27,7 +27,7 @@
             </ul>
             <div id="chat-feed">
                 <p class="chat-msg chat-msg-from">hello! (the chat works)</p>
-                <p class="chat-msg chat-msg-to">hello to you back!</p>
+                <!-- <p class="chat-msg chat-msg-to">hello to you back!</p> -->
             </div>
             <div id="chat-chat">
                 <input type="text" id="chat-input" class="chat-chat-form-style">
@@ -46,12 +46,21 @@
              new_chat.classList.add("chat-msg");
              new_chat.classList.add("chat-msg-to");
              feed.appendChild(new_chat);
+
+             if (input.value.toLowerCase() == "hi" || input.value.toLowerCase() == "hello") {
+                let new_new_chat = document.createElement("p");
+                new_new_chat.textContent = "hey!!";
+                new_new_chat.classList.add("chat-msg");
+                new_new_chat.classList.add("chat-msg-from");
+                feed.appendChild(new_new_chat);
+             }
          }
 
          button.addEventListener("click", chat);
          input.addEventListener('keyup', function() {
              if (event.keyCode === 13) {
                  chat();
+                 input.value = "";
              }
          });
         </script>

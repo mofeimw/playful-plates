@@ -45,7 +45,7 @@ header {
 
 header li {
     display: inline-block;
-    margin: 0 50px;
+    margin: 0 2.5rem;
     font-size: 1.7rem;
 }
 
@@ -73,7 +73,7 @@ h1 {
 
 /* CHAT */
 #chat {
-    margin: 50px;
+    margin: 2.5rem;
     background-color: #F5F5DC;
     border-radius: 25px 25px 25px 25px;
 }
@@ -83,7 +83,7 @@ h1 {
     justify-content: space-evenly;
     list-style: none;
     padding: 0;
-    background-color: #665a5d;
+    background-color: #273027;
     border-radius: 25px 25px 0 0;
 }
 
@@ -114,7 +114,7 @@ h1 {
     display: inline-block;
     width: 81%;
     padding: 0 1rem;
-    background-color: #F5F5DC;
+    background-color: #b2dbce;
     color: #2A1A1F;
 }
 
@@ -171,11 +171,9 @@ h1 {
 
 /* PLATE */
 #plates {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    margin: 50px;
-    color: #F5F5DC;
+    display: flex;
+    margin: 2.5rem;
+    color: #2A1A1F;
 }
 
 .plates-section {
@@ -187,29 +185,36 @@ h1 {
 
 .plates-section button {
     background-color: #71BDA3;
-}
-
-/* .plates-section h2 { */
-h2 {
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-#plates-submit {
-}
-
-#plates-status {
-}
-
-#plates-status h2 {
-    margin-bottom: 2.5rem;
-}
-
-.plates-section button {
     display: block;
     width: 100%;
     margin: 1rem 0;
     color: #2A1A1F;
+    font-size: 1.2rem;
+}
+
+.plates-section button:last-child {
+    margin: 0;
+}
+
+.plates-section h2 {
+    margin-bottom: 1.3rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#plates-submit {
+    width: 70%;
+}
+
+#plates-status {
+    width: 40%;
+    margin-left: 3%;
+}
+
+#plates-status h2 {
 }
 
 .button {
@@ -222,10 +227,6 @@ h2 {
 .button:hover {
     pointer: cursor;
     background-color: #F5F5DC;
-}
-
-#plates .plates-section .button:hover {
-    pointer: cursor;
 }
 
 /* LOGIN */
@@ -241,10 +242,7 @@ h2 {
     height: 40%;
     background-color: #F5F5DC;
     border-radius: 25px;
-    padding: 2rem;
-}
-
-.login-form {
+    padding: 3rem;
 }
 
 .login-form {
