@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Chewy";
+    src: url("../assets/chewy.ttf");
+}
+
+@font-face {
+    font-family: "Bukhari Script";
+    src: url("../assets/bukhari script.ttf");
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("../assets/background.jpg");
+    background-color: #D1BC9A;
+    font-family: Chewy, Georgia, serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+
+header {
+    height: 10vh;
+    background-color: #5E8C61;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 50px;
+    font-size: 1.7rem;
+}
+
+header #centerpiece {
+    font-family: "Bukhari Script", script;
+    font-size: 2.3rem;
+}
+
+header #centerpiece a:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #A9DEF9;
+}
