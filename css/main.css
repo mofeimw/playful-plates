@@ -373,7 +373,7 @@ h2 {
 #login h2 span {
     color: #5E8C61;
     display: inline-block;
-    margin: 0.8rem;
+    margin: 1rem;
 }
 
 #login-buttons {
@@ -781,4 +781,35 @@ h2 {
     font-size: 1.7rem;
     text-align: justify;
     text-justify: inter-word;
+}
+
+/* ACCESSORIES & HOME DECOR */
+ #accessories {
+    margin: 0 auto;
+    margin-top: 35vh;
+ }
+
+.accessory-container-top {
+    margin-bottom: 4rem;
+}
+
+ #glasses {
+     margin-top: 10%;
+ }
+
+ #moustache {
+     margin-top: 7%;
+ }
+
+ #cone {
+     margin-top: -5%;
+ }
+
+ #decor {
+    margin: 0 auto;
+    margin-top: 35vh;
+ }
+
+.decor-container-top {
+    margin-bottom: 4rem;
 }
