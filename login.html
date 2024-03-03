@@ -19,14 +19,39 @@
 
         <div id="login">
             <div id="login-container">
-                <h2>Welcome Back</h2>
-                <input id="login-email" placeholder="email: " class="login-form">
-                <input id="login-password" placeholder="password: " class="login-form">
-                <div id="login-buttons">
-                    <button id="login-submit" class="button">Login</button>
-                    <button id="login-signup" class="button">Signup</button>
+                <h2 id="login-h2">Welcome Back</h2>
+                <div id="login-form">
+                    <input id="login-email" placeholder="email: " class="login-form">
+                    <input id="login-password" placeholder="password: " type="password" class="login-form">
+                    <div id="login-buttons">
+                        <button id="login-submit" class="button">Login</button>
+                        <button id="login-signup" class="button">Signup</button>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <script>
+         let form = document.getElementById("login-form");
+         let button = document.getElementById("login-submit");
+         let input = document.getElementById("login-email");
+         let h2 = document.getElementById("login-h2");
+
+         function login() {
+             if (input.value == "") {
+                 return;
+             }
+             form.style.display = "none";
+             h2.innerHTML = "Welcome back,<br><span>" + input.value + "</span>";
+             h2.style.marginTop = "5rem";
+         }
+
+         button.addEventListener("click", login);
+         input.addEventListener("keyup", function() {
+             if (event.keyCode === 13) {
+                 login();
+             }
+         });
+        </script>
     </body>
 </html>

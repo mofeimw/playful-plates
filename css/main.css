@@ -316,7 +316,7 @@ h2 {
     background-color: #F5F5DC;
 }
 
-#plates-request-button {
+#plates-provider-view-button {
     width: 100%;
     height: 6rem;
     font-size: 2rem;
@@ -324,7 +324,7 @@ h2 {
     color: #F5F5DC;
 }
 
-#plates-request-button:hover {
+#plates-provider-view-button:hover {
     background-color: #273027;
     color: #F5F5DC;
 }
@@ -368,6 +368,12 @@ h2 {
     color: #2A1A1F;
     margin-bottom: 1rem;
     font-size: 2.1rem;
+}
+
+#login h2 span {
+    color: #5E8C61;
+    display: inline-block;
+    margin: 0.8rem;
 }
 
 #login-buttons {
@@ -510,7 +516,7 @@ h2 {
 }
 
 .world-world:first-child {
-    margin-left: 13%;
+    margin-left: 9%;
 }
 
 .world-map {
@@ -522,7 +528,7 @@ h2 {
     cursor: pointer;
 }
 
-.world-map:last-child {
+.world-world:last-child {
     margin-bottom: 3rem;
 }
 
@@ -611,12 +617,26 @@ h2 {
 }
 
 .market-item:first-child {
+    margin-left: 7%;
+}
+
+#bench {
+    margin-top: 13.5%;
+}
+
+#shirt {
+    margin-top: 17%;
     margin-left: 10%;
 }
 
-#bike, #flowerpot {
-    margin-top: 30%;
+#bike {
+    margin-top: 40%;
     margin-left: 10%;
+}
+
+#flowerpot {
+    margin-top: 42%;
+    margin-left: 18%;
 }
 
 #market-coins {
@@ -699,4 +719,66 @@ h2 {
 
 #profile-sidebar #profile-spacer {
     margin-top: 3rem;
+}
+
+#profile-coins-karma {
+    background: 0;
+    outline: 0;
+    border: 0;
+    position: absolute;
+    top: 19vh;
+    right: 2.5rem;
+    color: #F3C544;
+    font-size: 1.2rem;
+    background-color: #5E8C61;
+    border-radius: 25px;
+    padding: 1.5rem;
+}
+
+#profile-coins-karma img {
+    display: inline;
+    width: 2.3rem;
+    height: auto;
+    margin-right: 0.8rem;
+}
+
+#profile-coins-karma p {
+    display: inline-block;
+    vertical-align: super;
+    font-size: 1.8rem;
+}
+
+#profile-coins {
+    margin-bottom: 0.6rem;
+}
+
+#profile-coins-karma p:last-child {
+    margin-bottom: 0;
+}
+
+/* ABOUT */
+#about {
+    background-color: pink;
+    background-image: url("../assets/about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60vh;
+    width: auto;
+    margin: 18vh 32vh;
+    margin-bottom: 0;
+}
+
+#about-how {
+    background-color: #5E8C61;
+    margin: 0 20vw;
+    padding: 2.5rem;
+    border-radius: 25px;
+}
+
+#about-how p {
+    line-height: 1.4;
+    font-size: 1.7rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
