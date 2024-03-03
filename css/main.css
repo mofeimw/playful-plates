@@ -194,17 +194,18 @@ h1 {
 
 #chat-send {
     display: inline-block;
-    margin-left: 1%;
+    margin-left: 2.5%;
     width: 10%;
     padding: 10px 2px;
-    color: #2A1A1F;
-    background-color: #eba2af;
+    background-color: #273027;
+    color: #F5F5DC;
     font-size: 1.3rem;
 }
 
 #chat-send:hover {
     cursor: pointer;
-    background-color: #A9DEF9;
+    color: #2A1A1F;
+    background-color: #eba2af;
 }
 
 .chat-chat-form-style {
