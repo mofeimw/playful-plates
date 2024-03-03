@@ -18,7 +18,35 @@
         </header>
 
         <div id="profile">
-            PROFILE STUFF GOES HERE
+            <div id="profile-sidebar">
+                <h1>zigtac</h1>
+                <h3>Status: Provider</h3>
+                <h3>Friends: 16</h3>
+                <div id="profile-spacer"></div>
+                <button id="profile-accessories" class="button">Accessories</button>
+                <br>
+                <button id="profile-decor" class="button">Home Decor</button>
+                <br>
+                <button id="profile-settings" class="button">Settings</button>
+            </div>
+            <div id="profile-room">
+            </div>
         </div>
+
+        <script>
+         let accessories = document.getElementById("profile-accessories");
+         let decor = document.getElementById("profile-decor");
+         let settings = document.getElementById("profile-settings");
+
+         accessories.addEventListener("click", function() {
+             window.location.href = "accessories.html";
+         });
+         decor.addEventListener("click", function() {
+             window.location.href = "decor.html";
+         });
+         settings.addEventListener("click", function() {
+             window.location.href = "settings.html";
+         });
+        </script>
     </body>
 </html>
