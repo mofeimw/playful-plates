@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Playful Plates</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body id="light-bg">
+        <header id="alt-bg">
+            <ul>
+                <li><a href="plates.html">plates</a></li>
+                <li><a href="chat.html">chat</a></li>
+                <li id="centerpiece"><a href="index.html" id="greenery">Playful Plates</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </header>
+
+        <div id="provider">
+            <div class="container">
+                <div class="left">
+                    <h2>Uber Eats</h2>
+                    <img src="assets/check.png" id="provider-status-check" class="provider-status hidden">
+                    <img src="assets/x.png" id="provider-status-x" class="provider-status hidden">
+                    <div id="provider-order-info">
+                        <p>Restuarant: Protein House</p>
+                        <p>Order: Greek Bowl w/ brown rice + chicken</p>
+                        <p>Price: $18</p>
+                        <div id="provider-buttons">
+                            <button id="provider-accept" class="button">Accept</button>
+                            <button id="provider-ignore" class="button">Ignore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="assets/tothemoon.png" id="provider-profile-pic">
+                    <p>User: tothemoon</p>
+                    <p>Age: 49</p>
+                    <p>Marital status: divorced</p>
+                    <p>Income: $13k</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+         let accept = document.getElementById("provider-accept");
+         let ignore = document.getElementById("provider-ignore");
+         let info = document.getElementById("provider-order-info");
+
+         let check = document.getElementById("provider-status-check");
+         let x = document.getElementById("provider-status-x");
+
+         function showCheck() {
+             info.style.display = "none";
+             check.classList.remove("hidden");
+         }
+
+         function showX() {
+             info.style.display = "none";
+             x.classList.remove("hidden");
+         }
+
+         accept.addEventListener("click", showCheck);
+         ignore.addEventListener("click", showX);
+        </script>
+    </body>
+</html>

@@ -28,9 +28,11 @@
                 </div>
 
                 <div id="plates-status" class="plates-section">
-                    <h2>Status</h2>
-                    <button id="plates-status-pending" class="button">Pending</button>
-                    <button id="plates-status-accepted" class="button">Accepted</button>
+                    <h2>History</h2>
+                    <button class="button">8/16 - Pending</button>
+                    <button class="button">8/12 - Accepted</button>
+                    <button class="button">7/26 - Accepted</button>
+                    <button class="button">7/25 - Expired</button>
                 </div>
             </div>
 
@@ -38,32 +40,6 @@
         </div>
 
         <script>
-         let ubereats = document.getElementById("plates-submit-ubereats");
-         let grubhub = document.getElementById("plates-submit-grubhub");
-         let instacart = document.getElementById("plates-submit-instacart");
-         let hellofresh = document.getElementById("plates-submit-hellofresh");
-         ubereats.addEventListener("click", function() {
-             window.location.href = "ubereats.html";
-         });
-         grubhub.addEventListener("click", function() {
-             window.location.href = "grubhub.html";
-         });
-         instacart.addEventListener("click", function() {
-             window.location.href = "instacart.html";
-         });
-         hellofresh.addEventListener("click", function() {
-             window.location.href = "hellofresh.html";
-         });
-
-         let pending = document.getElementById("plates-status-pending");
-         let accepted = document.getElementById("plates-status-accepted");
-         pending.addEventListener("click", function() {
-             window.location.href = "pending.html";
-         });
-         accepted.addEventListener("click", function() {
-             window.location.href = "accepted.html";
-         });
-
          let provider = document.getElementById("plates-provider-view-button");
          provider.addEventListener("click", function() {
              window.location.href = "provider.html";

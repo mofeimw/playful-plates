@@ -245,7 +245,7 @@ h1 {
 .chat-msg-noti {
     text-align: center;
     background-color: #eba2af;
-    color: #360810;
+    color: #2b080e;
 }
 
 #light-bg {
@@ -466,7 +466,7 @@ h2 {
 }
 
 #addfriend-h2 span {
-    color: #5E8C61;
+    color: #eba2af;
     display: inline-block;
     margin: 0.8rem;
 }
@@ -474,7 +474,7 @@ h2 {
 /* WORLDS */
 #worlds {
     margin: 0 auto;
-    margin-top: 35vh;
+    margin-top: 32vh;
 }
 .worlds-arrow {
     background: 0;
@@ -566,7 +566,7 @@ h2 {
 /* MARKET */
 #market {
     margin: 0 auto;
-    margin-top: 25vh;
+    margin-top: 35vh;
 }
 .market-arrow {
     background: 0;
@@ -599,6 +599,7 @@ h2 {
 #market-container-top {
     display: flex;
     padding: 0 8rem;
+    margin-bottom: 4rem;
 }
 
 #market-container-bottom {
@@ -618,25 +619,6 @@ h2 {
 
 .market-item:first-child {
     margin-left: 7%;
-}
-
-#bench {
-    margin-top: 13.5%;
-}
-
-#shirt {
-    margin-top: 17%;
-    margin-left: 10%;
-}
-
-#bike {
-    margin-top: 40%;
-    margin-left: 10%;
-}
-
-#flowerpot {
-    margin-top: 42%;
-    margin-left: 18%;
 }
 
 #market-coins {
@@ -758,7 +740,7 @@ h2 {
 
 /* ABOUT */
 #about {
-    background-color: pink;
+    background-color: #5E8C61;
     background-image: url("../assets/about.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -784,15 +766,6 @@ h2 {
 }
 
 /* ACCESSORIES & HOME DECOR */
- #accessories {
-    margin: 0 auto;
-    margin-top: 35vh;
- }
-
-.accessory-container-top {
-    margin-bottom: 4rem;
-}
-
  #glasses {
      margin-top: 10%;
  }
@@ -805,11 +778,84 @@ h2 {
      margin-top: -5%;
  }
 
- #decor {
-    margin: 0 auto;
-    margin-top: 35vh;
- }
+/* PROVIDER */
+.container {
+  padding: 20vw;
+  margin-top: -7%;
+}
 
-.decor-container-top {
-    margin-bottom: 4rem;
+.left,
+.right {
+  background-color: #5E8C61;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.left {
+  width: calc(60% - (2.5rem));
+  width: 60%;
+  float: left;
+  min-height: 44vh;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.right {
+  width: calc(40% - (2.5rem));
+  float: right;
+  min-height: 44vh;
+  margin-top: 1em;
+  text-align: center;
+}
+
+#provider h2 {
+    margin-top: 2.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 1.4rem;
+}
+
+#provider p {
+    margin-left: 2.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+#provider .button {
+    border-radius: 50px;
+    font-size: 1.7rem;
+    margin-bottom: 2.3rem;
+    background-color: #F5F5DC;
+    color: #5E8C61;
+    margin: 0 1.5rem;
+}
+
+#provider .button:hover {
+    cursor: pointer;
+    background-color: #273027;
+    color: #F5F5DC;
+}
+
+#provider-buttons {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#provider-profile-pic {
+    display: inline-block;
+    margin: 0 auto;
+    width: 4.8rem;
+    height: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.provider-status {
+    width: 10rem;
+    height: auto;
+    margin-top: 1.6rem;
+}
+
+.hidden {
+    display: none;
 }
