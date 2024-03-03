@@ -26,7 +26,7 @@
                 <li><a href="#"><img src="assets/gerbil-avatar5.png"></li>
             </ul>
             <div id="chat-feed">
-                <p class="chat-msg chat-msg-from">hello! (the chat works)</p>
+                <p class="chat-msg chat-msg-from">Hey, just wanted to thank you for the meal! It means a lot to my daughter and I.</p>
                 <!-- <p class="chat-msg chat-msg-to">hello to you back!</p> -->
             </div>
             <div id="chat-chat">
@@ -40,14 +40,44 @@
          let input = document.getElementById("chat-input");
          let feed = document.getElementById("chat-feed");
 
+         i = 0;
+
          function chat() {
+             if (input.value == "") {
+                 return;
+             }
+
+             if (input.value.toLowerCase() == "clear") {
+                 feed.innerHTML = "";
+                 i = -1;
+                 return;
+             }
+
              let new_chat = document.createElement("p");
              new_chat.textContent = input.value;
              new_chat.classList.add("chat-msg");
              new_chat.classList.add("chat-msg-to");
              feed.appendChild(new_chat);
 
-             if (input.value.toLowerCase() == "hi" || input.value.toLowerCase() == "hello") {
+             if (i == 0) {
+                 let new_new_chat = document.createElement("p");
+                 new_new_chat.textContent = "Again, thank you so much!!";
+                 new_new_chat.classList.add("chat-msg");
+                 new_new_chat.classList.add("chat-msg-from");
+                 setTimeout(function() {
+                    feed.appendChild(new_new_chat);
+                 }, 1300);
+                 i += 1;
+             } else if (i == 1) {
+                 let new_new_chat = document.createElement("p");
+                 new_new_chat.textContent = "*zigtac started a monthly hello fresh subscription*";
+                 new_new_chat.classList.add("chat-msg");
+                 new_new_chat.classList.add("chat-msg-noti");
+                 setTimeout(function() {
+                    feed.appendChild(new_new_chat);
+                 }, 1300);
+                 i += 1;
+             } else if (input.value.toLowerCase() == "hi" || input.value.toLowerCase() == "hello") {
                  let new_new_chat = document.createElement("p");
                  new_new_chat.textContent = "hey!!";
                  new_new_chat.classList.add("chat-msg");

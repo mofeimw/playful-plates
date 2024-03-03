@@ -23,7 +23,7 @@ body {
     background-image: url("../assets/background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 0%;
+    background-position: center bottom;
     height: 100vh;
 }
 
@@ -55,11 +55,50 @@ a:hover {
     height: 7rem;
 }
 
+#coins-karma {
+    background: 0;
+    outline: 0;
+    border: 0;
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    color: #F3C544;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 25px;
+    padding: 1.5rem;
+}
+
+#coins-karma:hover {
+    cursor: pointer;
+}
+
+#coins-karma img {
+    display: inline;
+    width: 2.3rem;
+    height: auto;
+    margin-right: 0.8rem;
+}
+
+#coins-karma p {
+    display: inline-block;
+    vertical-align: super;
+    font-size: 1.8rem;
+}
+
+#coins {
+    margin-bottom: 0.6rem;
+}
+
+#coins-karma p:last-child {
+    margin-bottom: 0;
+}
+
 header {
     height: 10vh;
     background-color: #5E8C61;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 3.5vh;
     position: fixed;
     top: 0;
     width: 100%;
@@ -130,16 +169,17 @@ h1 {
 }
 
 #chat-chat {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    width: 94.25%;
     position: absolute;
-    bottom: 2rem;
+    bottom: 2.5rem;
 }
 
 #chat-input {
     display: inline-block;
-    width: 81%;
+    width: 50%;
+    flex: 1;
     padding: 0 1rem;
     background-color: #b2dbce;
     color: #2A1A1F;
@@ -153,14 +193,15 @@ h1 {
 #chat-send {
     display: inline-block;
     margin-left: 1%;
-    width: 8%;
+    width: 10%;
     padding: 10px 2px;
     color: #2A1A1F;
+    background-color: #eba2af;
 }
 
 #chat-send:hover {
-    background-color: #A9DEF9;
     cursor: pointer;
+    background-color: #A9DEF9;
 }
 
 .chat-chat-form-style {
@@ -170,6 +211,7 @@ h1 {
     border: 0;
     margin: 0;
     background-color: #71BDA3;
+    box-sizing: border-box;
 }
 
 .chat-msg {
@@ -182,6 +224,10 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
+.chat-msg:hover, #chat-feed:hover {
+    cursor: default;
+}
+
 .chat-msg-from {
     text-align: left;
     background-color: #A9DEF9;
@@ -192,6 +238,11 @@ h1 {
     background-color: #71BDA3;
 }
 
+.chat-msg-noti {
+    text-align: center;
+    background-color: #eba2af;
+}
+
 #light-bg {
     background-color: #F5F5DC;
 }
@@ -200,7 +251,7 @@ h1 {
 #plates {
     display: flex;
     margin: 2.5rem;
-    margin-top: 21vh;
+    margin-top: 19vh;
     color: #2A1A1F;
 }
 
@@ -268,7 +319,7 @@ h2 {
 
 #login-container {
     width: 40%;
-    height: 40%;
+    height: 45%;
     background-color: #F5F5DC;
     border-radius: 25px;
     padding: 3rem;
@@ -331,7 +382,7 @@ h2 {
 
 #addfriend-container {
     width: 40%;
-    height: 30%;
+    height: 35%;
     background-color: #F5F5DC;
     border-radius: 25px;
     padding: 3rem;
@@ -425,7 +476,15 @@ h2 {
 
 .world-map {
     display: inline-block;
-    width: 60%;
+    width: 70%;
+}
+
+.world-map:hover {
+    cursor: pointer;
+}
+
+.world-map:last-child {
+    margin-bottom: 3rem;
 }
 
 .world-world p {
@@ -433,6 +492,30 @@ h2 {
     margin-right: 35%;
     margin-top: 5%;
     font-size: 1.4rem;
+}
+
+#worlds-karma {
+    background: 0;
+    outline: 0;
+    border: 0;
+    position: absolute;
+    top: 10rem;
+    right: 4rem;
+    color: #F3C544;
+    font-size: 1.7rem;
+}
+
+#worlds-karma img {
+    display: inline-block;
+    width: 2.3rem;
+    height: auto;
+    margin-right: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+#worlds-karma p {
+    display: inline-block;
+    vertical-align: super;
 }
 
 /* MARKET */
@@ -484,6 +567,10 @@ h2 {
     color: #2A1A1F;
 }
 
+.market-item:hover {
+    cursor: pointer;
+}
+
 .market-item:first-child {
     margin-left: 10%;
 }
@@ -491,4 +578,27 @@ h2 {
 #bike, #flowerpot {
     margin-top: 30%;
     margin-left: 10%;
+}
+
+#market-coins {
+    background: 0;
+    outline: 0;
+    border: 0;
+    position: absolute;
+    top: 10rem;
+    right: 4rem;
+    color: #F3C544;
+    font-size: 1.6rem;
+}
+
+#market-coins img {
+    display: inline;
+    width: 2.3rem;
+    height: auto;
+    margin-right: 0.8rem;
+}
+
+#market-coins p {
+    display: inline-block;
+    vertical-align: super;
 }
