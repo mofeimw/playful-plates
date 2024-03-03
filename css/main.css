@@ -253,6 +253,7 @@ h1 {
     margin: 2.5rem;
     margin-top: 19vh;
     color: #2A1A1F;
+    flex-wrap: wrap;
 }
 
 .plates-section {
@@ -285,11 +286,11 @@ h2 {
 }
 
 #plates-submit {
-    width: 70%;
+    width: 55%;
 }
 
 #plates-status {
-    width: 40%;
+    width: 30%;
     margin-left: 3%;
 }
 
@@ -306,6 +307,23 @@ h2 {
 .button:hover {
     pointer: cursor;
     background-color: #F5F5DC;
+}
+
+#plates-request {
+    display: block;
+    margin-top: 2.5rem;
+}
+
+#plates-request-button {
+    display: inline-block;
+    width: 94vw;
+    height: 16vh;
+    background-color: #5E8C61;
+    font-size: 1.9rem;
+}
+
+#plates-request-button:hover {
+    background-color: #71BDA3;
 }
 
 /* LOGIN */
