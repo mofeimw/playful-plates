@@ -496,6 +496,11 @@ h2 {
     top: 50%;
 }
 
+#worlds p {
+    font-size: 1.8rem;
+    color: #2A1A1F;
+}
+
 #worlds-arrow-left img {
     left: 1rem;
 }
@@ -858,4 +863,10 @@ h2 {
 
 .hidden {
     display: none;
+}
+
+/* FRENS */
+#worlds .friend-p {
+    margin-top: 2rem;
+    color: #5E8C61;
 }

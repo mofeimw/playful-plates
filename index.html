@@ -38,20 +38,22 @@
 
              if (x >= BUILDING1_XMIN && x <= BUILDING1_XMAX) {
                  if (y <= BUILDING1_YMIN) {
-                     // alert("Entering Building 1");
                      window.location.href = "worlds.html";
                  }
              }
              if (x >= BUILDING2_XMIN && x <= BUILDING2_XMAX) {
                  if (y <= BUILDING2_YMIN && y >= BUILDING2_YMAX) {
-                     // alert("Entering Building 2");
                      window.location.href = "market.html";
                  }
              }
              if (x >= BUILDING3_XMIN && x <= BUILDING3_XMAX) {
                  if (y <= BUILDING3_YMIN && y >= BUILDING3_YMAX) {
-                     // alert("Entering Building 3");
                      window.location.href = "profile.html";
+                 }
+             }
+             if (x >= FOUNTAIN_XMIN && x <= FOUNTAIN_XMAX) {
+                 if (y <= FOUNTAIN_YMIN && y >= FOUNTAIN_YMAX) {
+                     window.location.href = "friends.html";
                  }
              }
          }
@@ -76,6 +78,11 @@
          BUILDING3_XMAX = LANDING_WIDTH * 0.46561;
          BUILDING3_YMIN = LANDING_HEIGHT * 0.44624;
          BUILDING3_YMAX = LANDING_HEIGHT * 0.15376; // sky high
+
+         FOUNTAIN_XMIN = LANDING_WIDTH * 0.5172;
+         FOUNTAIN_XMAX = LANDING_WIDTH * 0.6541;
+         FOUNTAIN_YMIN = LANDING_HEIGHT * 0.837; // same ground level
+         FOUNTAIN_YMAX = LANDING_HEIGHT * 0.557223;
 
          add.addEventListener("click", function() {
              window.location.href = "addfriend.html";
