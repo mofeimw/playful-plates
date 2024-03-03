@@ -18,24 +18,23 @@
         </header>
 
         <div id="plates">
-            <div id="plates-submit" class="plates-section">
-                <h2>Submit a Plate</h2>
-                <button id="plates-submit-ubereats" class="button">Uber Eats</button>
-                <button id="plates-submit-grubhub" class="button">Grubhub</button>
-                <button id="plates-submit-instacart" class="button">Instacart</button>
-                <button id="plates-submit-hellofresh" class="button">Hello Fresh</button>
+            <div id="plates-top-container">
+                <div id="plates-submit" class="plates-section">
+                    <h2>Submit a Plate</h2>
+                    <button id="plates-submit-ubereats" class="button">Uber Eats</button>
+                    <button id="plates-submit-grubhub" class="button">Grubhub</button>
+                    <button id="plates-submit-instacart" class="button">Instacart</button>
+                    <button id="plates-submit-hellofresh" class="button">Hello Fresh</button>
+                </div>
+
+                <div id="plates-status" class="plates-section">
+                    <h2>Status</h2>
+                    <button id="plates-status-pending" class="button">Pending</button>
+                    <button id="plates-status-accepted" class="button">Accepted</button>
+                </div>
             </div>
 
-            <div id="plates-status" class="plates-section">
-                <h2>Status</h2>
-                <button id="plates-status-pending" class="button">Pending</button>
-                <button id="plates-status-accepted" class="button">Accepted</button>
-            </div>
-
-            <br>
-            <div id="plates-request">
-                <button id="plates-request-button" class="button">Request a Plate</button>
-            </div>
+            <button id="plates-request-button" class="button plates-section">Request a Plate</button>
         </div>
 
         <script>
@@ -63,6 +62,11 @@
          });
          accepted.addEventListener("click", function() {
              window.location.href = "accepted.html";
+         });
+
+         let request = document.getElementById("plates-request-button");
+         request.addEventListener("click", function() {
+             window.location.href = "request.html";
          });
         </script>
     </body>

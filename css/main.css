@@ -183,6 +183,7 @@ h1 {
     padding: 0 1rem;
     background-color: #b2dbce;
     color: #2A1A1F;
+    font-size: 1.3rem;
 }
 
 #chat-input:focus {
@@ -197,6 +198,7 @@ h1 {
     padding: 10px 2px;
     color: #2A1A1F;
     background-color: #eba2af;
+    font-size: 1.3rem;
 }
 
 #chat-send:hover {
@@ -216,12 +218,12 @@ h1 {
 
 .chat-msg {
     display: block;
-    color: #2A1A1F;
     padding: 15px 15px;
     border-radius: 10px;
     font-size: 1.2em;
     margin: 0 2.5rem;
     margin-bottom: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .chat-msg:hover, #chat-feed:hover {
@@ -231,16 +233,19 @@ h1 {
 .chat-msg-from {
     text-align: left;
     background-color: #A9DEF9;
+    color: #092533;
 }
 
 .chat-msg-to {
     text-align: right;
     background-color: #71BDA3;
+    color: #273027;
 }
 
 .chat-msg-noti {
     text-align: center;
     background-color: #eba2af;
+    color: #360810;
 }
 
 #light-bg {
@@ -248,18 +253,22 @@ h1 {
 }
 
 /* PLATE */
+
 #plates {
-    display: flex;
-    margin: 2.5rem;
+    padding: 0 20vw;
     margin-top: 19vh;
-    color: #2A1A1F;
-    flex-wrap: wrap;
+}
+
+#plates-top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem;
 }
 
 .plates-section {
-    display: inline-block;
     background-color: #5E8C61;
-    padding: 40px;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
     border-radius: 25px;
 }
 
@@ -268,8 +277,9 @@ h1 {
     display: block;
     width: 100%;
     margin: 1rem 0;
-    color: #2A1A1F;
-    font-size: 1.2rem;
+    color: #273027;
+    font-size: 1.4rem;
+    border-radius: 25px;
 }
 
 .plates-section button:last-child {
@@ -278,23 +288,12 @@ h1 {
 
 .plates-section h2 {
     margin-bottom: 1.3rem;
+    font-size: 2.2rem;
 }
 
 h2 {
     text-align: center;
     font-size: 2rem;
-}
-
-#plates-submit {
-    width: 55%;
-}
-
-#plates-status {
-    width: 30%;
-    margin-left: 3%;
-}
-
-#plates-status h2 {
 }
 
 .button {
@@ -309,21 +308,16 @@ h2 {
     background-color: #F5F5DC;
 }
 
-#plates-request {
-    display: block;
-    margin-top: 2.5rem;
-}
-
 #plates-request-button {
-    display: inline-block;
-    width: 94vw;
-    height: 16vh;
-    background-color: #5E8C61;
-    font-size: 1.9rem;
+    width: 100%;
+    height: 6rem;
+    font-size: 2rem;
+    border-radius: 20px;
+    color: #F5F5DC;
 }
 
 #plates-request-button:hover {
-    background-color: #71BDA3;
+    background-color: #273027;
 }
 
 /* LOGIN */
@@ -353,6 +347,7 @@ h2 {
     margin-bottom: 1.75rem;
     border: 0;
     padding-left: 1rem;
+    font-size: 1.2rem;
 }
 
 .login-form:focus {
@@ -363,6 +358,7 @@ h2 {
 #login h2 {
     color: #2A1A1F;
     margin-bottom: 1rem;
+    font-size: 2.1rem;
 }
 
 #login-buttons {
@@ -373,6 +369,7 @@ h2 {
 #login-buttons .button {
     width: 30%;
     margin: 0 2rem;
+    font-size: 1.2rem;
 }
 
 #login #login-buttons .button:hover {
@@ -416,6 +413,7 @@ h2 {
     margin-bottom: 1.75rem;
     border: 0;
     padding-left: 1rem;
+    font-size: 1.3rem;
 }
 
 #addfriend-email:focus {
@@ -426,12 +424,14 @@ h2 {
 #addfriend h2 {
     color: #2A1A1F;
     margin-bottom: 1rem;
+    font-size: 2.1rem;
 }
 
 #addfriend-button {
     text-align: center;
     margin: 0 auto;
     width: 30%;
+    font-size: 1.2rem;
 }
 
 #addfriend-submit:hover {
