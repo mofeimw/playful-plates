@@ -267,19 +267,26 @@ h1 {
 
 .plates-section {
     background-color: #5E8C61;
+    color: #273027;
     margin-bottom: 2.5rem;
     padding: 2.5rem;
     border-radius: 25px;
 }
 
 .plates-section button {
-    background-color: #71BDA3;
+    background-color: #273027;
     display: block;
     width: 100%;
     margin: 1rem 0;
     color: #273027;
+    color: #F5F5DC;
     font-size: 1.4rem;
     border-radius: 25px;
+}
+
+.plates-section button:hover {
+    color: #273027;
+    background-color: #71BDA3;
 }
 
 .plates-section button:last-child {
@@ -289,6 +296,7 @@ h1 {
 .plates-section h2 {
     margin-bottom: 1.3rem;
     font-size: 2.2rem;
+    color: #F5F5DC;
 }
 
 h2 {
@@ -318,6 +326,7 @@ h2 {
 
 #plates-request-button:hover {
     background-color: #273027;
+    color: #F5F5DC;
 }
 
 /* LOGIN */
@@ -442,6 +451,12 @@ h2 {
 
 #addfriend-submit {
     background-color: #71BDA3;
+}
+
+#addfriend-h2 span {
+    color: #5E8C61;
+    display: inline-block;
+    margin: 0.8rem;
 }
 
 /* WORLDS */

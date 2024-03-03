@@ -19,12 +19,33 @@
 
         <div id="addfriend">
             <div id="addfriend-container">
-                <h2>Add a Friend</h2>
-                <input id="addfriend-email" placeholder="email: ">
-                <div id="addfriend-button">
-                    <button id="addfriend-submit" class="button">Send Request!</button>
+                <h2 id="addfriend-h2">Add a Friend</h2>
+                <div id="addfriend-form">
+                    <input id="addfriend-email" placeholder="email: ">
+                    <div id="addfriend-button">
+                        <button id="addfriend-submit" class="button">Send Request!</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <script>
+         let form = document.getElementById("addfriend-form");
+         let button = document.getElementById("addfriend-button");
+         let input = document.getElementById("addfriend-email");
+         let h2 = document.getElementById("addfriend-h2");
+
+         function send() {
+             form.style.display = "none";
+             h2.innerHTML = "Friend request sent to:<br><span>" + input.value + "</span>";
+             h2.style.marginTop = "3.3rem";
+         }
+
+         button.addEventListener("click", send);
+         input.addEventListener("keyup", function() {
+             if (event.keyCode === 13) {
+                 send();
+             }
+         });
+        </script>
     </body>
 </html>
