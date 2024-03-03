@@ -139,6 +139,7 @@ h1 {
 /* CHAT */
 #chat {
     margin: 2.5rem;
+    margin: 0 20vw;
     margin-top: 19vh;
     background-color: #F5F5DC;
     border-radius: 25px 25px 25px 25px;
@@ -171,7 +172,7 @@ h1 {
 #chat-chat {
     display: flex;
     align-items: center;
-    width: 94.25%;
+    width: 60%;
     position: absolute;
     bottom: 2.5rem;
 }
